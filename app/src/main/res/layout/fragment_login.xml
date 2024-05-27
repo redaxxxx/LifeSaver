@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.loginRegister.LoginFragment"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_loginHere"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Login Here"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
+            app:layout_constraintTop_toTopOf="@+id/guidelineLoginUp" />
+
+        <TextView
+            android:id="@+id/tv_welcomeBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Welcome back you've been missed"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@id/tv_loginHere" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginEmail_outline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxStrokeColor="@color/gray"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@id/tv_welcomeBack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_loginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginPassword_outline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxStrokeColor="@color/gray"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@id/loginEmail_outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_loginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_forgetYourPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Forget your password"
+            android:layout_marginTop="10dp"
+            android:gravity="end"
+            android:textSize="16sp"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@id/loginPassword_outline" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:text="Sign in"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@+id/tv_forgetYourPassword" />
+
+        <TextView
+            android:id="@+id/createNewAccountBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Create new account"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@id/loginBtn" />
+
+        <TextView
+            android:id="@+id/tv_continueWithInRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Or continue with"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/linearLayout"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/guidelineLoginDown"
+            app:layout_constraintEnd_toStartOf="@id/guidelineLoginRight"
+            app:layout_constraintStart_toEndOf="@id/guidelineLoginLeft">
+
+            <ImageView
+                android:id="@+id/registerFacebookBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_facebook"
+                android:layout_marginEnd="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_google" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLoginLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05109489" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLoginRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.94890511" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLoginUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02872777" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLoginDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.97127223" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
