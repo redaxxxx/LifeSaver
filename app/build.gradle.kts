@@ -61,6 +61,10 @@ dependencies {
 
     //dager hilt
     implementation ("com.google.dagger:hilt-android:2.50")
+
+    //loading button
+    implementation("com.github.leandroborgesferreira:loading-button-android:2.3.0")
+
     kapt ("com.google.dagger:hilt-compiler:2.50")
 }
 kapt{

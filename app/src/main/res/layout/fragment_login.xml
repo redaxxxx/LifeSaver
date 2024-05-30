@@ -21,7 +21,7 @@
             android:gravity="center"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:textColor="@color/green"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
             app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
             app:layout_constraintTop_toTopOf="@+id/guidelineLoginUp" />
@@ -88,17 +88,19 @@
             android:layout_marginTop="10dp"
             android:gravity="end"
             android:textSize="16sp"
-            android:textColor="@color/green"
+            android:textColor="@color/red"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
             app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
             app:layout_constraintTop_toBottomOf="@id/loginPassword_outline" />
 
-        <Button
+        <com.github.leandroborgesferreira.loadingbutton.customViews.CircularProgressButton
             android:id="@+id/loginBtn"
             android:layout_width="0dp"
             android:layout_height="55dp"
             android:text="Sign in"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/red"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="24dp"

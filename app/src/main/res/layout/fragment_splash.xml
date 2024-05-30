@@ -16,9 +16,10 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/emergencyImgView"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/first_aid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/emergency_box"
+            android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -28,16 +29,15 @@
             android:id="@+id/appName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="monospace"
             android:gravity="center"
+            android:layout_marginTop="96dp"
             android:text="LifeSaver"
-            android:textColor="@color/green"
-            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:textSize="35sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/emergencyImgView" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

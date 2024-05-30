@@ -27,15 +27,15 @@
             android:id="@+id/welcomeSentence"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="110dp"
             android:gravity="center"
-            android:text="Welcome to LifeSaver"
-            android:textSize="20sp"
-            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:text="LifeSaver"
             android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="30sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/beginSentence"
@@ -44,7 +44,7 @@
             android:layout_marginBottom="96dp"
             android:gravity="center"
             android:text="Begin your journey to be a hero in emergencies"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@id/welcomeSentence"
             app:layout_constraintEnd_toEndOf="parent"
@@ -58,9 +58,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/beginSentence"
-            android:backgroundTint="@color/green"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:backgroundTint="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
