@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.dagger.hilt.android")
     kotlin("kapt")
     id("com.google.gms.google-services")
 }
@@ -61,11 +62,10 @@ dependencies {
 
     //dager hilt
     implementation ("com.google.dagger:hilt-android:2.50")
+    kapt ("com.google.dagger:hilt-compiler:2.50")
 
     //loading button
     implementation("com.github.leandroborgesferreira:loading-button-android:2.3.0")
-
-    kapt ("com.google.dagger:hilt-compiler:2.50")
 }
 kapt{
     correctErrorTypes = true

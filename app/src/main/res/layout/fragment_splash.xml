@@ -14,7 +14,7 @@
         android:background="@color/white"
         tools:context=".fragments.loginRegister.SplashFragment">
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:id="@+id/emergencyImgView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

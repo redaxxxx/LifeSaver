@@ -16,12 +16,14 @@ import com.android.developer.prof.reda.lifesaver.databinding.FragmentRegisterBin
 import com.android.developer.prof.reda.lifesaver.utils.RegisterValidation
 import com.android.developer.prof.reda.lifesaver.utils.Resource
 import com.android.developer.prof.reda.lifesaver.viewModels.RegistrationViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-const val TAG: String = "RegisterFragment"
+const val REGISTER_TAG: String = "RegisterFragment"
+@AndroidEntryPoint
 class RegisterFragment : Fragment() {
     private lateinit var binding: FragmentRegisterBinding
     private val viewModel by viewModels<RegistrationViewModel>()
@@ -66,7 +68,7 @@ class RegisterFragment : Fragment() {
                         binding.registerBtn.revertAnimation()
                     }
                     is Resource.Error ->{
-                        Log.d(TAG, "Error: ${it.message.toString()}")
+                        Log.d(REGISTER_TAG, "Error: ${it.message.toString()}")
                         binding.registerBtn.revertAnimation()
                     }
                     else -> Unit
